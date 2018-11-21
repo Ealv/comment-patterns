@@ -2,8 +2,5 @@
   "spec_dir": "spec",
   "spec_files": [
     "**/*[sS]pec.js"
-  ],
-  "helpers": [
-    "../node_modules/jasmine-test-helpers/lib/**/*.js"
-]
+  ]
 }
