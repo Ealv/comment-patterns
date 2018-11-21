@@ -1,6 +1,9 @@
 var patterns = require('../')
 var should = require('should')
 
+var cStyleMultiline = require('../languages/patterns/common/c-style.js').multiLine()
+var cStyleSingleLine = require('../languages/patterns/common/c-style.js').singleLine()
+
 /* global describe */
 /* global it */
 // /* global xdescribe */
@@ -28,11 +31,8 @@ describe('comment-patterns', function () {
       {
         name: 'JavaScript',
         nameMatchers: ['.js'],
-        multiLineComment: [
-          { apidoc: true, end: '*/', middle: '*', start: /\/\*\*/ },
-          { end: '*/', middle: '*', start: /\/\*/ }
-        ],
-        singleLineComment: [ { start: '//' } ]
+        multiLineComment: cStyleMultiline,
+        singleLineComment: cStyleSingleLine
       }
     )
     done()
@@ -43,11 +43,8 @@ describe('comment-patterns', function () {
       {
         name: 'JavaScript',
         nameMatchers: ['.js'],
-        multiLineComment: [
-          { apidoc: true, end: '*/', middle: '*', start: /\/\*\*/ },
-          { end: '*/', middle: '*', start: /\/\*/ }
-        ],
-        singleLineComment: [ { start: '//' } ]
+        multiLineComment: cStyleMultiline,
+        singleLineComment: cStyleSingleLine
       }
     )
     done()
@@ -58,11 +55,8 @@ describe('comment-patterns', function () {
       {
         name: 'PHP',
         nameMatchers: ['.php', '.php3', '.php4', '.php5', '.fbp'],
-        multiLineComment: [
-          { apidoc: true, end: '*/', middle: '*', start: /\/\*\*/ },
-          { end: '*/', middle: '*', start: /\/\*/ }
-        ],
-        singleLineComment: [ { start: '//' } ]
+        multiLineComment: cStyleMultiline,
+        singleLineComment: cStyleSingleLine
       }
     )
     done()
@@ -73,11 +67,8 @@ describe('comment-patterns', function () {
       {
         name: 'Scala',
         nameMatchers: ['.scala'],
-        multiLineComment: [
-          { apidoc: true, end: '*/', middle: '*', start: /\/\*\*/ },
-          { end: '*/', middle: '*', start: /\/\*/ }
-        ],
-        singleLineComment: [ { start: '//' } ]
+        multiLineComment: cStyleMultiline,
+        singleLineComment: cStyleSingleLine
       }
     )
     done()

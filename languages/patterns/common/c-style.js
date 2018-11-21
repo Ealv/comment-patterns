@@ -6,12 +6,12 @@ module.exports.multiLine = function () {
   return [{
     start: /\/\*\*/,
     middle: '*',
-    end: '*/',
+    end: /\*\//,
     apidoc: true
   }, {
     start: /\/\*/,
     middle: '*',
-    end: '*/'
+    end: /\*\//
   }]
 }
 
@@ -20,5 +20,5 @@ module.exports.multiLine = function () {
  * @returns {string[]}
  */
 module.exports.singleLine = function () {
-  return ['//']
+  return [ { start: '//' } ]
 }
