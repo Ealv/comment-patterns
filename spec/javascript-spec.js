@@ -121,7 +121,7 @@ describe('comment-patterns.regex', function () {
     match[r.cg.contentStart].should.eql('\nline 1\n')
   })
 
-  it('should provide a regex that matches multi-line python comments', function () {
+  it('should provide a regex that matches multi-lineee python comments', function () {
     var r = patterns.regex('test.py')
     var match = r.regex.exec('"""\nline 1\n"""')
     match[r.cg.contentStart].should.eql('\nline 1\n')
