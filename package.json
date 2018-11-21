@@ -23,12 +23,13 @@
     "esformatter": "^0.10.0",
     "groc": "^0.8.0",
     "jasmine": "^3.2.0",
+    "jasmine-test-helpers": "^1.2.3",
     "json-literal": "^1.1.0",
     "parse-code-context": "^0.1.3",
     "should": "^13.2.3",
+    "standard": "^12.0.1",
     "verb": "^0.8.10",
-    "verb-cli": "^0.7.4",
-    "standard": "^12.0.1"
+    "verb-cli": "^0.7.4"
   },
   "dependencies": {
     "lodash": "^4.17.11"
